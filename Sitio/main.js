@@ -15,3 +15,18 @@ const subir = () => {
    
 }
 document.getElementById("btn_subir").addEventListener("click",subir)
+
+const cambio_idiomas = () => {
+    let language = document.getElementById('option').value
+
+    if (language=="eng") {
+        location.href='indexeng.html'
+    }else{
+        
+            location.href='index.html'
+        
+    }
+
+}
+const idiomas = document.getElementById('option')
+idiomas.addEventListener('change',cambio_idiomas)

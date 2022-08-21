@@ -1,3 +1,4 @@
+/*general*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +9,7 @@ body{
     background-color: #DCD6F7;
    
 }
-/*Formas*/
+/*Forma*/
 #semi_circulo{
     width: 17%;
      height: 100%;
@@ -16,7 +17,84 @@ body{
      background: #0582CA;  
 }
 
+/*header*/
+.navbar{
+    color: #DCD6F7;
+    background-color: #660061 ;
+    position: sticky;
+    top: 0;
+}
+.header-text{
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #DCD6F7;
+}
+/*Wave*/
+.under-header{
+    width: 100%;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    position: relative;
+    /*Todo lo que sobrepase el navegador se oculta*/
+    overflow: hidden;
+}
+  .bg_color{
+      width: 100%;
+      height: 18%;
+      background-color: #660061 ;
+      /*Position para que aparezca y el 0 para que este pegado al top de la pag*/
+      position: absolute;
+      top: 0;
+  }
+  .wave{
+      width: 300%;
+      height: 18%;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      background-image: url('img/OLA.svg');
+      background-position: bottom;
+  } 
+  .w1{
+      /*Dura 7segundos sin hacer pausas, infinitamente*/
+    animation: w1 10s linear infinite;
+  }
+  /*animacion desplazamiento dura 7s y que no sea constante e infinito, le agrego opacidad pa que no que se note la animation desplazamiento*/
+  .w2{
+      /*el -.125 es para darle un delay, fijate cambiarlo*/
+    animation: w2 10s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+    opacity: 0.5;
+  }
+  /*Uso keyframe para punto de start y end, cuando este en 0% se le asiga un ML de 0, y cuando este en 100, que se desplace -1600px*/
+  @keyframes w1 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
 
+@keyframes w2 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+/*cuando este al 0 y al 100 se transforme y se desplace en eje Y, en 50 sea mayor*/
+@keyframes desplazamiento {
+    0%, 100%{
+        transform: translateY(-5px);
+    }
+
+    50%{
+        transform: translateY(25px);
+    }
+    
+}
 /*Textos-Letras*/
 #Texto{
     color: #660061;
@@ -75,7 +153,7 @@ body{
 .fondo{
     position: relative;
     top: 5%;
-    left: 15%;
+    left: 0%;
     font-size: 9vw;  
 }
 
@@ -114,7 +192,7 @@ footer {
     
   }
 
-  /**/
+  /* Botones*/
   .top{
     border: 0;
     border-radius:40%;
@@ -126,4 +204,8 @@ footer {
 	position: fixed;
 	bottom:1rem;
 	right:1rem;
+}
+
+.boton{
+    background-color: #660061;
 }
