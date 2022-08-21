@@ -22,34 +22,78 @@ body{
     color: #660061;
     font-family: 'Poppins', sans-serif;
 }
+#parrafos-info{
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+}
+.sexting-info{
+    color: #0582CA;
+    margin-top: 3vw;
+    text-shadow: 2px 2px #DCD6F7;
+    text-align: center;
+    
+}
+.cb-info{
+    color: #DCD6F7;
+    margin-top: 3vw;
+    text-shadow: 1px 1px #0582CA;
+    text-align: center;
+}
+
+.grooming-info{
+    color: #660061;
+    margin-top: 3vw;
+    text-align: center;
+}
+.titulos{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+}
 
 #titulo-sexting{
     color: #0582CA;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    text-align: start;
+    font-size: 5vw;
+    text-shadow: 2px 2px #DCD6F7;
+
 }
 
 #titulo-cb{
     color: #DCD6F7;
+    font-size: 5vw;
     font-family: 'Poppins', sans-serif;
 }
 #titulo-grooming{
     color: #660061;
+    font-size: 5vw;
     font-family: 'Poppins', sans-serif;
 }
 
-/*Img*/
-.caja{
-    margin-bottom: 540px;
+
+.fondo{
     position: relative;
-    display: inline-block;
-    text-align: center;
+    top: 5%;
+    left: 15%;
+    font-size: 9vw;  
 }
 
-.titulos{
-    position: absolute;
-    top: 5%;
-    left: 20%;
+#fondo-txt-preg{
+    color: transparent;
+    font-size: 18vw;  
+    -webkit-text-stroke: 2px #660061;;
 }
+#fondo-txt{
+    color: transparent;
+    -webkit-text-stroke: 2px #660061;;
+}
+/*Img*/
+.caja{
+    position: relative;
+    display: inline-block;
+}
+
 
 /*Footer*/
 
