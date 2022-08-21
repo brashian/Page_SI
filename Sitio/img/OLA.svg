@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="198" fill="none" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+
+<defs>
+<clipPath id="clip0">
+<rect width="1600" height="600" fill="white" id="svg_1"/>
+</clipPath>
+</defs>
+<g class="currentLayer" style=""><title>Layer 1</title><g clip-path="url(#clip0)" id="svg_2" class="" fill-opacity="1" fill="#660061">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1613.092102475868,67.9618570809664 C1298.5933349477689,67.9618570809664 1198.5807043737204,194.11124506335818 792.9683067675448,193.85114409053173 C388.4682842233657,193.85114409053173 287.3432785873209,67.9618570809664 -4.90798770084848,67.9618570809664 V-12.149223270900547 H1613.092102475868 C1613.092102475868,-12.149223270900547 1613.092102475868,37.79014423309653 1613.092102475868,67.9618570809664 z" fill="#660061" id="svg_3"/>
+</g><rect fill="#660061" stroke-dashoffset="" fill-rule="nonzero" id="svg_4" x="1585" y="3" width="11" height="1" style="color: rgb(102, 0, 97);"/><rect fill="#660061" stroke-dashoffset="" fill-rule="nonzero" id="svg_6" x="1588" y="67" width="36" height="0" style="color: rgb(102, 0, 97);"/></g></svg>

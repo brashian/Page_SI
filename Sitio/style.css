@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #DCD6F7;
+   
+}
+/*Formas*/
+#semi_circulo{
+    width: 17%;
+     height: 100%;
+     border-radius:  0 0 100% 0;
+     background: #0582CA;  
+}
+
+
+/*Textos-Letras*/
+#Texto{
+    color: #660061;
+    font-family: 'Poppins', sans-serif;
+}
+
+#titulo-sexting{
+    color: #0582CA;
+    font-family: 'Poppins', sans-serif;
+}
+
+#titulo-cb{
+    color: #DCD6F7;
+    font-family: 'Poppins', sans-serif;
+}
+#titulo-grooming{
+    color: #660061;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Img*/
+.caja{
+    margin-bottom: 540px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.titulos{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+
+/*Footer*/
+
+
+footer {
+    background-color: #660061;
+    color: #DCD6F7;
+  }
+  
+  footer a {
+    color: #DCD6F7;
+    text-decoration:none;
+  }
+  
+  footer a:hover, footer a:focus {
+    color: #F4A6A2;
+    text-decoration:none;
+    
+  }
+
+  /**/
+  .top{
+    border: 0;
+    border-radius:40%;
+    display: block;
+	padding:1rem;
+	background:#660061;
+    color: #DCD6F7;
+	cursor:pointer;
+	position: fixed;
+	bottom:1rem;
+	right:1rem;
+}
