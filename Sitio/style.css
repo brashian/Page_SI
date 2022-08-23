@@ -12,9 +12,9 @@ body{
 /*Forma*/
 #semi_circulo{
     width: 17%;
-     height: 100%;
-     border-radius:  0 0 100% 0;
-     background: #0582CA;  
+    height: 93%;
+    border-radius:  0 0 100% 0;
+    background: #0582CA;  
 }
 
 /*header*/
@@ -22,6 +22,7 @@ body{
     color: #DCD6F7;
     background-color: #660061 ;
     position: sticky;
+    height: 5vw;
     top: 0;
 }
 .header-text{
@@ -96,32 +97,42 @@ body{
     
 }
 /*Textos-Letras*/
-#Texto{
+#texto{
     color: #660061;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 0;
+}
+
+.titulo-que-son{
+    font-size:3vw;
+}
+
+.parrafo-que-son{
+    font-size:1.6vw;
 }
 #parrafos-info{
-    font-size: 3vw;
+    font-size: 1.6vw;
     font-family: 'Poppins', sans-serif;
 }
 .sexting-info{
-    color: #0582CA;
+    color: #660061;
     margin-top: 3vw;
-    text-shadow: 2px 2px #DCD6F7;
-    text-align: center;
+    margin-right:2vw;
+    text-align: justify;
     
 }
 .cb-info{
     color: #DCD6F7;
     margin-top: 3vw;
-    text-shadow: 1px 1px #0582CA;
-    text-align: center;
+    margin-right:6vw;
+    text-align: justify;
 }
 
 .grooming-info{
     color: #660061;
     margin-top: 3vw;
-    text-align: center;
+    margin-right:4vw;
+    text-align: justify;
 }
 .titulos{
     position: absolute;
@@ -130,11 +141,10 @@ body{
 }
 
 #titulo-sexting{
-    color: #0582CA;
+    color: #660061;
     font-family: 'Poppins', sans-serif; 
     text-align: start;
     font-size: 5vw;
-    text-shadow: 2px 2px #DCD6F7;
 
 }
 
@@ -147,6 +157,7 @@ body{
     color: #660061;
     font-size: 5vw;
     font-family: 'Poppins', sans-serif;
+    margin-top: 3.5vw;
 }
 
 
@@ -154,17 +165,29 @@ body{
     position: relative;
     top: 5%;
     left: 0%;
-    font-size: 9vw;  
+    font-size: 8vw;  
 }
 
 #fondo-txt-preg{
+   
+    display: inline;
     color: transparent;
-    font-size: 18vw;  
+    font-size: 14vw;  
     -webkit-text-stroke: 2px #660061;;
 }
 #fondo-txt{
     color: transparent;
     -webkit-text-stroke: 2px #660061;;
+    align-items: center;
+}
+.contenedor-tecnologia{
+    display:flex;
+    align-items: center;
+}
+.imagen-underheader{
+    border-radius: 50%;
+    
+    
 }
 /*Img*/
 .caja{
@@ -208,4 +231,8 @@ footer {
 
 .boton{
     background-color: #660061;
+}
+
+.entre-panes{
+    height:40vw;
 }
