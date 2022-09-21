@@ -1,28 +1,22 @@
 /*general*/
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #DCD6F7;
    
 }
-/*Forma*/
-#semi_circulo{
-    width: 17%;
-    height: 93%;
-    border-radius:  0 0 100% 0;
-    background: #0582CA;  
-}
+
 
 /*header*/
 .navbar{
     color: #DCD6F7;
     background-color: #660061 ;
     position: sticky;
-    height: 5vw;
+    height: 100%;
     top: 0;
 }
 .header-text{
@@ -31,71 +25,7 @@ body{
     text-align: center;
     color: #DCD6F7;
 }
-/*Wave*/
-.under-header{
-    width: 100%;
-    padding-bottom: 120px;
-    padding-top: 100px;
-    position: relative;
-    /*Todo lo que sobrepase el navegador se oculta*/
-    overflow: hidden;
-}
-  .bg_color{
-      width: 100%;
-      height: 18%;
-      background-color: #660061 ;
-      /*Position para que aparezca y el 0 para que este pegado al top de la pag*/
-      position: absolute;
-      top: 0;
-  }
-  .wave{
-      width: 300%;
-      height: 18%;
-      position: absolute;
-      top: 150px;
-      left: 0;
-      background-image: url('img/OLA.svg');
-      background-position: bottom;
-  } 
-  .w1{
-      /*Dura 7segundos sin hacer pausas, infinitamente*/
-    animation: w1 10s linear infinite;
-  }
-  /*animacion desplazamiento dura 7s y que no sea constante e infinito, le agrego opacidad pa que no que se note la animation desplazamiento*/
-  .w2{
-      /*el -.125 es para darle un delay, fijate cambiarlo*/
-    animation: w2 10s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
-    opacity: 0.5;
-  }
-  /*Uso keyframe para punto de start y end, cuando este en 0% se le asiga un ML de 0, y cuando este en 100, que se desplace -1600px*/
-  @keyframes w1 {
-    0%{
-        margin-left: 0;
-    }
-    100%{
-        margin-left: -1600px;
-    }
-}
 
-@keyframes w2 {
-    0%{
-        margin-left: 0;
-    }
-    100%{
-        margin-left: -1600px;
-    }
-}
-/*cuando este al 0 y al 100 se transforme y se desplace en eje Y, en 50 sea mayor*/
-@keyframes desplazamiento {
-    0%, 100%{
-        transform: translateY(-5px);
-    }
-
-    50%{
-        transform: translateY(25px);
-    }
-    
-}
 /*Textos-Letras*/
 #texto{
     color: #660061;
@@ -194,8 +124,33 @@ body{
     position: relative;
     display: inline-block;
 }
-
-
+/*ejemplo*/
+.ejemplo{
+    
+    position: relative;
+    bottom: 10%;
+    left: 0%;
+    width: 50%;
+    border-radius: 80%;
+    overflow: hidden; 
+}
+.title{
+   
+    color: #660061;
+   text-align: end;
+   font-size: 6vh;
+}
+.animacion{
+    
+    background: #DCD6F7;
+}
+.listado{
+    color: #660061;
+    font-size: 3vh;
+}
+.listado:hover{
+    background-color: #DCD6F7;
+}
 /*Footer*/
 
 
@@ -235,4 +190,54 @@ footer {
 
 .entre-panes{
     height:40vw;
+}
+
+/*Animacion*/
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top,#DCD6F7,transparent);
+    z-index: 1000;
+}
+section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom,#660061,transparent);
+    z-index: 1000;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+/*Nos permite que al estar escalado las corrdenadas se mantengan abajo*/
+section img#man{
+    transform-origin: bottom;
+}
+#text{
+    position: relative;
+    color: aliceblue;
+    font-size: 10vw;
 }
