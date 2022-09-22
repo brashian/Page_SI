@@ -219,14 +219,15 @@ footer {
   .top{
     border: 0;
     border-radius:40%;
-    display: block;
+    display: none;
 	padding:1rem;
-	background:#660061;
+	background:#791f74;
     color: #DCD6F7;
 	cursor:pointer;
 	position: fixed;
 	bottom:1rem;
 	right:1rem;
+
 }
 
 .boton{
@@ -235,4 +236,13 @@ footer {
 
 .entre-panes{
     height:40vw;
+}
+
+.astronauta{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    z-index: 1;
 }
