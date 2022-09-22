@@ -33,18 +33,6 @@ idiomas.addEventListener('change',cambio_idiomas)
 
 gsap.registerPlugin(ScrollTrigger);
 
-let tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.div-animacion-astronauta',
-        pin: '.astronauta',
-        scrub: true,
-        start: 'top top',
-        end: '100% 100%',
-    }
-})
-
-tl2.to('.astronauta', {y: '100%', rotate: '360deg'})
-
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: '#semi_circulo',
