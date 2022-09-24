@@ -96,6 +96,7 @@ body{
     }
     
 }
+
 /*Textos-Letras*/
 #texto{
     color: #660061;
@@ -145,7 +146,26 @@ body{
     font-family: 'Poppins', sans-serif; 
     text-align: start;
     font-size: 5vw;
+}
 
+#sexting-mas-info{
+    overflow: hidden;
+    padding-left: 12%;
+}
+
+#div-cards-sexting{
+    font-family: 'Poppins', sans-serif;
+    padding: 0 3rem;
+}
+
+#div-carousel-sexting{
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 500px){
+    body{
+        background-color: red;
+    }
 }
 
 #titulo-cb{
@@ -159,7 +179,6 @@ body{
     font-family: 'Poppins', sans-serif;
     margin-top: 3.5vw;
 }
-
 
 .fondo{
     position: relative;
