@@ -162,12 +162,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 500px){
-    body{
-        background-color: red;
-    }
-}
-
 #titulo-cb{
     color: #DCD6F7;
     font-size: 5vw;
